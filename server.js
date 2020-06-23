@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Listening on PORT ${PORT}`);
 });
@@ -21,6 +21,7 @@ app.post("/", (req, res) => {
   if (req.files) {
     console.log(req.files);
     const file = req.files.csv;
+    file.name = 'records.csv'
     
     file.mv("./uploads/" + file.name, function (err, result) {
       if (err) {

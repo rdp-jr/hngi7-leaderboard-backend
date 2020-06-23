@@ -31,7 +31,8 @@ app.post("/", (req, res) => {
       //   success: true,
       //   message: "File uploaded!"
       // })
-      res.send("nice!");
+      const clientUrl = 'clienturl'
+      res.send(`CSV File has been uploaded! Look at ${clientUrl} to see the changes`);
       // return
     });
   }

@@ -22,5 +22,6 @@
     "url": "git+https://github.com/rdp-jr/hngi7-leaderboard-backend.git"
   },
   "author": "Roberto Principio Jr",
-  "license": "ISC"
+  "license": "ISC",
+  "heroku-run-build-script": true
 }

@@ -31,8 +31,8 @@ app.post("/", (req, res) => {
       //   success: true,
       //   message: "File uploaded!"
       // })
-      const clientUrl = 'clienturl'
-      res.send(`CSV File has been uploaded! Look at ${clientUrl} to see the changes`);
+      const clientUrl = 'https://hngi7-leaderboard-frontend.vercel.app/'
+      res.sendFile(__dirname + "/success.html");
       // return
     });
   }
